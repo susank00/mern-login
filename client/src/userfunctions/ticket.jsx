@@ -51,7 +51,7 @@ const Ticket = () => {
       };
 
       const response = await axios.post(
-        "http://localhost:3001/api/ticket",
+        `${import.meta.env.VITE_API_URL_PROD_API_URL}/api/ticket`,
         ticketData,
         {
           headers: {
